@@ -1,0 +1,26 @@
+.header{
+    background-color: teal;
+    border-radius: 7px;
+}
+marquee{
+    padding:5px;
+    font-size: 40px;
+    color:seashell;
+}
+p{
+    font-size: 40px;
+    color: teal;
+}
+  
+  .container{
+      border-radius: 20px;
+      background-color: rgb(241, 237, 237);
+      padding-top: 7px;
+  }
+  .container2{
+    height: 310px;
+  }
+  .center{
+    width: 150px;
+
+}

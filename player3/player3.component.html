@@ -1,0 +1,67 @@
+<img src="/assets/images/tambola.jpg" class="center1 " >
+
+<div class="container">
+     
+<div class="header">
+   <h1> <marquee>Welcome {{userName}}</marquee></h1>
+</div>
+
+<h4 style="text-align: center;">Random Number</h4>
+<div class="centered ">
+    <textarea #inputValue2  class="form-control"  rows="1">{{randomNumber}}</textarea>
+</div>
+</div>
+<div class="centered">
+</div>
+<br>
+
+ <div class="centered container" > 
+<div id ="btns">
+ <button #btnclr0 (click)="btnClick(btnclr0)">{{ loadedPosts[0][0][0] }}</button>
+ <button >{{ loadedPosts[0][0][1] }}</button>  
+ <button #btnclr2 (click)="btnClick(btnclr2)">{{ loadedPosts[0][0][2] }}</button>
+ <button #btnclr3 (click)="btnClick(btnclr3)">{{ loadedPosts[0][0][3] }}</button>
+ <button >{{ loadedPosts[0][0][4] }}</button>
+ <button #btnclr5 (click)="btnClick(btnclr5)">{{ loadedPosts[0][0][5] }}</button>
+ <button >{{ loadedPosts[0][0][6] }}</button>
+ <button>{{ loadedPosts[0][0][7] }}</button>
+ <button #btnclr8 (click)="btnClick(btnclr8)" >{{ loadedPosts[0][0][8] }}</button>
+<br>
+ <button >{{ loadedPosts[0][1][0] }}</button>
+ <button #btnclrb (click)="btnClick(btnclrb)">{{ loadedPosts[0][1][1] }}</button>
+ <button >{{ loadedPosts[0][1][2] }}</button>
+ <button #btnclrd (click)="btnClick(btnclrd)">{{ loadedPosts[0][1][3] }}</button>
+ <button >{{ loadedPosts[0][1][4] }}</button>
+ <button #btnclrf (click)="btnClick(btnclrf)">{{ loadedPosts[0][1][5] }}</button>
+ <button #btnclrg (click)="btnClick(btnclrg)">{{ loadedPosts[0][1][6] }}</button>
+ <button #btnclrh (click)="btnClick(btnclrh)">{{ loadedPosts[0][1][7] }}</button>
+ <button >{{ loadedPosts[0][1][8] }}</button>
+ <br>
+ <button #btnclrA (click)="btnClick(btnclrA)">{{ loadedPosts[0][2][0] }}</button>
+ <button>{{ loadedPosts[0][2][1] }}</button>
+ <button #btnclrC (click)="btnClick(btnclrC)">{{ loadedPosts[0][2][2] }}</button>
+ <button>{{ loadedPosts[0][2][3] }}</button>
+ <button #btnclrE (click)="btnClick(btnclrE)">{{ loadedPosts[0][2][4] }}</button>
+ <button >{{ loadedPosts[0][2][5] }}</button>
+ <button #btnclrG (click)="btnClick(btnclrG)">{{ loadedPosts[0][2][6] }}</button>
+ <button >{{ loadedPosts[0][2][7] }}</button>
+ <button #btnclrI (click)="btnClick(btnclrI)">{{ loadedPosts[0][2][8] }}</button>
+</div>
+</div>
+<div class="centered container">
+<button class="button btn-outline-success btn-lg" style="height: 50px;"  [disabled]="clicked"  
+(click)="onFetchPosts() ; clicked= true"> Generate Ticket</button>
+</div>
+
+ <br>
+ 
+<div class="mx-auto col-sm-10.7 text-center container">       
+          <button class="btn btn-info ticketButton1"  >Early FIve</button>
+          <button class="btn btn-info ticketButton2"  >Top Line</button>
+          <button class="btn btn-info ticketButton3"   >Mid Line</button>
+          <button class="btn btn-info ticketButton4"  >Bottom Line</button>
+          <button class="btn btn-info ticketButton5"   >Four Corners</button>
+          <button class="btn btn-info ticketButton6"  >Full House</button>    
+</div>
+
+

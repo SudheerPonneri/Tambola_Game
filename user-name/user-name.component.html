@@ -1,0 +1,57 @@
+
+<div class="container container1">  
+    <form #adminForm="ngForm" (ngSubmit) = "onSubmit(adminForm.value) ">
+      <div class="header">
+        <marquee>Enter Your Name to Login</marquee>
+   </div>
+   <div class="form-group">
+   
+   <p class="text-center">Admin Panel</p>
+      <div class="col-sm-12">          
+        <input type="text" class="form-control" 
+         #nameRef="ngModel" minlength="3" 
+        maxlength="30" required class="form-control" name="name" ngModel id="pwd"
+         placeholder="Enter Admin Name" name="pwd">
+      </div>
+      <div [hidden]="nameRef.valid || nameRef.pristine" class="alert alert-danger">
+        please enter valid name</div>
+      </div>
+    <div class="form-group">        
+      <div class="mx-auto col-sm-10 text-center">
+        <button type="submit" class="btn btn-outline-success btn-lg" 
+        (click)="clickMethod(nameRef)"  routerLink="/admin" 
+        routerLinkActive="active"  [disabled]="adminForm.invalid">Submit</button>
+      </div>
+    </div>
+  <hr>
+  
+</form>
+     </div>
+    
+<div class="container container2">
+  <p class="text-center">Player Panel</p>                                   
+  <div class="dropdown text-center">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Select a Player
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="http://localhost:4200/player"  target="_blank">Player 1</a>
+      <a class="dropdown-item" href="http://localhost:4200/player2" target="_blank">Player 2</a>
+      <a class="dropdown-item" href="http://localhost:4200/player3" target="_blank">Player 3</a>
+      <a class="dropdown-item" href="http://localhost:4200/player4" target="_blank">Player 4</a>
+      <a class="dropdown-item" href="http://localhost:4200/player5" target="_blank">Player 5</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+
